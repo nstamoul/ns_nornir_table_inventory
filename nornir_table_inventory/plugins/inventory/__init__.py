@@ -1,3 +1,3 @@
-from .table import CSVInventory
+from .table import CSVInventory, ExcelInventory, FlatDataInventory
 
-__all__ = ("CSVInventory",)
+__all__ = ("CSVInventory", "ExcelInventory", "FlatDataInventory")
