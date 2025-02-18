@@ -164,10 +164,11 @@ class CSVInventory(FlatDataInventory):
 class ExcelInventory(FlatDataInventory):
     def __init__(
             self,
-            excel_file: str = "inventory.xlsx"
+            excel_file: str = "inventory.xlsx",
+            excel_sheet: str
     ) -> None:
         self.hosts_list = []
-        dataframe = pd.read_excel(excel_file)
+        dataframe = pd.read_excel(excel_file, sheet_name = excel_sheet)
         dataframe.fillna('')
         items = dataframe.to_dict(orient='records')
         for item in items:
