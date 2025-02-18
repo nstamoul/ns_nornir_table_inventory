@@ -173,7 +173,6 @@ class ExcelInventory(FlatDataInventory):
         for item in items:
             del item['secret']
             del item['verbose']
-            del item['host']
             del item['global_delay_factor']
             item['platform'] = item.pop('device_type')
             item['hostname'] = item.pop('ip')
