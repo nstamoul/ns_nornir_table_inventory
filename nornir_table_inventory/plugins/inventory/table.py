@@ -174,6 +174,8 @@ class ExcelInventory(FlatDataInventory):
             try:
                 if not item['name']:
                     del item['name']
+            except:
+                pass
             try:
                 del item['secret']
             except:
