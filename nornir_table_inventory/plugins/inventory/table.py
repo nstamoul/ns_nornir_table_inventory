@@ -172,23 +172,23 @@ class ExcelInventory(FlatDataInventory):
         items = dataframe.to_dict(orient='records')
         for item in items:
             try:
-                del v['secret']
+                del item['secret']
             except:
                 pass
             try:
-                del v['verbose']
+                del item['verbose']
             except:
                 pass
             try:
-                del v['host']
+                del item['host']
             except:
                 pass
             try:
-                del v['global_delay_factor']
+                del item['global_delay_factor']
             except:
                 pass
             try:
-                del v['Global_delay_factor']
+                del item['Global_delay_factor']
             except:
                 pass
             item['platform'] = item.pop('device_type')
