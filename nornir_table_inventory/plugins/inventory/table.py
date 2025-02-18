@@ -172,6 +172,9 @@ class ExcelInventory(FlatDataInventory):
         items = dataframe.to_dict(orient='records')
         for item in items:
             try:
+                if not item['name']:
+                    del item['name']
+            try:
                 del item['secret']
             except:
                 pass
