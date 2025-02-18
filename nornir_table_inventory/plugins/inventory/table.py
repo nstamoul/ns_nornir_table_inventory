@@ -171,11 +171,8 @@ class ExcelInventory(FlatDataInventory):
         dataframe.fillna('')
         items = dataframe.to_dict(orient='records')
         for item in items:
-            #try:
-            #    if isnan(item['name']):
-            #        del item['name']
-            #except:
-            #    pass
+            if isnan(item['name']):
+                item['name'] = item['ip']
             try:
                 del item['secret']
             except:
