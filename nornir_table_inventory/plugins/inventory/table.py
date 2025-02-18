@@ -171,9 +171,26 @@ class ExcelInventory(FlatDataInventory):
         dataframe.fillna('')
         items = dataframe.to_dict(orient='records')
         for item in items:
-            del item['secret']
-            del item['verbose']
-            del item['global_delay_factor']
+            try:
+                del v['secret']
+            except:
+                pass
+            try:
+                del v['verbose']
+            except:
+                pass
+            try:
+                del v['host']
+            except:
+                pass
+            try:
+                del v['global_delay_factor']
+            except:
+                pass
+            try:
+                del v['Global_delay_factor']
+            except:
+                pass
             item['platform'] = item.pop('device_type')
             item['hostname'] = item.pop('ip')
         super().__init__(data=items)
