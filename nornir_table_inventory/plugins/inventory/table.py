@@ -164,7 +164,7 @@ class CSVInventory(FlatDataInventory):
 class ExcelInventory(FlatDataInventory):
     def __init__(
             self,
-            excel_file: str = "inventory.xlsx",
+            excel_file: str,
             excel_sheet: str
     ) -> None:
         self.hosts_list = []
