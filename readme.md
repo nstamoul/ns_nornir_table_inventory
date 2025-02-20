@@ -22,7 +22,7 @@ nornir_table_inventory supports 3  inventory classes .
 
 
 ```bash
-pip install nornir-table-inventory
+pip install ns-nornir-table-inventory
 ```
 
 ## Example usage
