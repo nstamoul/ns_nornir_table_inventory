@@ -1,12 +1,12 @@
 [tool.poetry]
-name = "nornir_table_inventory"
-version = "0.4.4"
+name = "ns_nornir_table_inventory"
+version = "0.0.1"
 description = "nornir inventory plugin,support managing inventory by csv or excel file"
-authors = ["feifeiflight <feifeiflight@126.com>"]
+authors = ["nstamoul <nstamoul0@gmail.com>"]
 license = "Apache-2.0"
 readme = "readme.md"
-homepage = "https://github.com/jiujing/nornir_table_inventory"
-repository = "https://github.com/jiujing/nornir_table_inventory"
+homepage = "https://github.com/nstamoul/ns_nornir_table_inventory"
+repository = "https://github.com/nstamoul/ns_nornir_table_inventory"
 keywords = ["nornir", "table", "csv", "excel", "inventory"]
 classifiers = [
   "License :: OSI Approved :: Apache Software License",
