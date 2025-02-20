@@ -20,9 +20,9 @@ classifiers = [
 
 
 [tool.poetry.plugins."nornir.plugins.inventory"]
-"FlatDataInventory" = "nornir_table_inventory.plugins.inventory.table:FlatDataInventory"
-"CSVInventory" = "nornir_table_inventory.plugins.inventory.table:CSVInventory"
-"ExcelInventory" = "nornir_table_inventory.plugins.inventory.table:ExcelInventory"
+"FlatDataInventory" = "ns_nornir_table_inventory.plugins.inventory.table:FlatDataInventory"
+"CSVInventory" = "ns_nornir_table_inventory.plugins.inventory.table:CSVInventory"
+"ExcelInventory" = "ns_nornir_table_inventory.plugins.inventory.table:ExcelInventory"
 
 
 
